@@ -1,5 +1,4 @@
 const menuItems = document.querySelectorAll('.Header_row_Top-bottom-btn');
-
 menuItems.forEach(item => {
   item.addEventListener('click', () => {
     // Hamma elementlardan "active" klassini olib tashlash
@@ -9,3 +8,8 @@ menuItems.forEach(item => {
     item.classList.add('active');
   });
 });
+
+
+document.getElementById("menuItems").onclick = function() {
+  window.location.href = "https://www.instagram.com/reels/DDcJns8OyeO/";
+};
