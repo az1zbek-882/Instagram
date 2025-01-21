@@ -127,11 +127,34 @@ html, body {
   width: 49.5%;
   height: 100vh;
 }
-.Main_left-nav {
+.Main_left-navbar {
   width: 100%;
   height: 50px;
   border: 1px solid #8E8E8E;
+  display: flex;
+  align-items: center;
   margin: 30px 0 0 0;
+}
+.Main_left-navbar-nav {
+  width: 100%;
+  height: 100%;
+}
+.Main_left-navbar-nav-track {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.Main_left-navbar-nav-track-item {
+  width: 641.359px;
+  height: 50px;
+}
+.Main_left-navbar-nav-track-item img {
+  width: 90%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 .Main_left-post {
   width: 100%;
