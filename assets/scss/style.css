@@ -63,6 +63,71 @@ html, body {
   transition: fill 0.3s ease;
 }
 
+.Slider {
+  position: relative;
+  width: 1104px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Slider_wrap {
+  position: relative;
+  z-index: 2;
+  width: 1004px;
+  height: 500px;
+  overflow: hidden;
+}
+.Slider_wrap-track {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  transition: all 0.3s ease;
+  gap: 2px;
+}
+.Slider_wrap-track-menu {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Slider_wrap-track-menu-item {
+  width: 500px;
+  height: 500px;
+}
+.Slider_wrap-track-menu-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Slider_wrap-Btns-btn {
+  position: absolute;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.Slider_wrap-Btns-btn:active {
+  transform: translateY(4px);
+}
+.Slider_wrap-Btns-btn-prev {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(158, 152, 152);
+  color: #fff;
+  left: -40px;
+  top: 20px;
+}
+.Slider_wrap-Btns-btn-next {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(158, 152, 152);
+  color: #fff;
+  top: 20px;
+  right: -40px;
+}
+
 /*Global Stayle End*/
 /*Header Start*/
 .Header {
@@ -129,25 +194,30 @@ html, body {
 }
 .Main_left-navbar {
   width: 100%;
-  height: 50px;
+  height: 80px;
   border: 1px solid #8E8E8E;
   display: flex;
   align-items: center;
   margin: 30px 0 0 0;
 }
 .Main_left-navbar-nav {
-  width: 100%;
+  width: 632.02PX;
   height: 100%;
 }
 .Main_left-navbar-nav-track {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 320%;
   height: 100%;
 }
 .Main_left-navbar-nav-track-item {
-  width: 641.359px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Main_left-navbar-nav-track-item img {
   width: 90%;

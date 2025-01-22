@@ -31,7 +31,81 @@
     fill: currentColor;
     transition: fill 0.3s ease;
 }
+.Slider {
+    position: relative;
+    width: 1104px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    &_wrap {
+        position: relative;
+        z-index: 2;
+        width: 1004px;
+        height: 500px;
+        overflow: hidden;
+
+        &-track {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            transition: all 0.3s ease;
+            gap: 2px;
+           &-menu{
+            width: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            &-item {
+                width: 500px;
+                height: 500px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+           }
+        }
+
+        &-Btns {
+            // position: relative;
+            // top: 50%;
+            &-btn {
+                position: absolute;
+                // bottom: 0;
+                z-index: 5;
+                transition: all 0.1s ease;
+                &:active{
+                    transform: translateY(4px);
+                }
+                &-prev{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: rgb(158, 152, 152);
+                    color: $white;
+                    left:  -40px;
+                    top: 20px;
+                }
+                &-next {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: rgb(158, 152, 152);
+                    color: $white;
+                    top: 20px;
+                    right: -40px;
+                }
+            }
+        }
+
+        
+    }
+}
 /*Global Stayle End*/
 
 /*Header Start*/
@@ -110,22 +184,27 @@
         height: 100vh;
         &-navbar{
             width: 100%;
-            height: 50px;
+            height: 80px;
             border: 1px solid $grey;
             display: flex;
             align-items: center;
             margin: 30px 0 0 0 ;
             &-nav{
-                width: 100%;
+                width: 632.02PX;
                 height: 100%;
                 &-track{
                     display: flex;
                     align-items: center;
-                    width: 100%;
+                    width: 320%;
                     height: 100%;
                     &-item{
-                        width: 641.359px;
-                        height: 50px;
+                        width: 60px;
+                        height: 60px;
+                        background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         & img{
                             width: 90%;
                             height: 90%;
