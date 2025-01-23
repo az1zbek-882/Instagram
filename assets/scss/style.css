@@ -248,8 +248,8 @@ html, body {
   justify-content: space-between;
 }
 .Main_left-post-one-lefts-img {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
 .Main_left-post-one-lefts-img img {
   width: 100%;
@@ -257,6 +257,22 @@ html, body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+.Main_left-post-two {
+  width: 100%;
+}
+.Main_left-post-two img {
+  width: 100%;
+  border-radius: 2px;
+}
+.Main_left-post-three {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Main_left-post-three-lefts {
+  display: flex;
+  gap: 10px;
 }
 .Main_right {
   display: flex;
